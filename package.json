@@ -1,0 +1,26 @@
+{
+  "name": "pm2-ssh",
+  "version": "1.10.0",
+  "description": "",
+  "main": "tty.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "pmx": "*",
+    "express": "3.4.4",
+    "socket.io": "0.9.16",
+    "pty.js": "git+ssh://git@github.com:chjj/pty.js.git",
+    "term.js": "0.0.3"
+  },
+  "apps": [
+    {
+      "script": "app.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+      "max_memory_restart": "100M",
+      "merge_logs": true
+    }
+  ],
+  "author": "",
+  "license": "ISC"
+}

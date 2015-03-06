@@ -1,0 +1,18 @@
+{
+  "name": "tty.js",
+  "description": "A terminal for your browser",
+  "author": "Christopher Jeffrey",
+  "version": "0.2.13",
+  "main": "./index.js",
+  "bin": "./bin/tty.js",
+  "man": "./man/tty.js.1",
+  "preferGlobal": false,
+  "repository": "git://github.com/chjj/tty.js.git",
+  "homepage": "https://github.com/chjj/tty.js",
+  "bugs": { "url": "https://github.com/chjj/tty.js/issues" },
+  "keywords": ["tty", "terminal", "term", "xterm"],
+  "tags": ["tty", "terminal", "term", "xterm"],
+  "dependencies": {
+  },
+  "engines": { "node": ">= 0.8.0" }
+}
