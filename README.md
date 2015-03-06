@@ -10,8 +10,6 @@ $ pm2 install pm2-ssh
 $ google-chrome http://localhost:8080
 ```
 
-Then type the default auth
-
 Username: foo
 Password: bar
 
