@@ -1,6 +1,6 @@
 {
   "name": "pm2-ssh",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "",
   "main": "tty.js",
   "scripts": {
@@ -8,10 +8,7 @@
   },
   "dependencies": {
     "pmx": "*",
-    "express": "3.4.4",
-    "socket.io": "0.9.16",
-    "pty.js": "git+ssh://git@github.com:chjj/pty.js.git",
-    "term.js": "0.0.3"
+    "pty.js": "git+ssh://git@github.com:Unitech/tty.js.git"
   },
   "apps": [
     {

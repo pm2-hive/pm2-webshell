@@ -1,7 +1,7 @@
 
 # pm2-ssh
 
-SSH to your server with a browser.
+*SSH* to your server with a browser.
 
 ## Install
 
@@ -24,7 +24,10 @@ $ pm2 set pm2-ssh:password bar
 
 # Change port
 $ pm2 set pm2-ssh:port 7890
-````
+
+# Use https
+$ pm2 set pm2-ssh:https true
+```
 
 # License
 

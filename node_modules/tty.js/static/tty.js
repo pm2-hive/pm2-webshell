@@ -24,7 +24,7 @@ var document = this.document
 var initialTitle = document.title;
 
 /**
- * Helpers
+ * Helrs
  */
 
 var EventEmitter = Terminal.EventEmitter
@@ -80,11 +80,16 @@ tty.open = function() {
   open = tty.elements.open;
   lights = tty.elements.lights;
 
-  if (open) {
-    on(open, 'click', function() {
-      new Window;
-    });
-  }
+  // if (open) {
+  //   on(open, 'click', function() {
+  setTimeout(function() {
+    var win = new Window();
+    setTimeout(function() {
+      win.maximize();
+    }, 300);
+  }, 300);
+  //});
+  //}
 
   if (lights) {
     on(lights, 'click', function() {

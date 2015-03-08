@@ -15,11 +15,12 @@ div {
 }
 
 html {
-  background: #fff;
+    background: #111;
+
 }
 
 html.dark {
-  background: #333;
+
 }
 
 html.maximized {
