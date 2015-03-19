@@ -1,4 +1,5 @@
 
+This is a POC of the upcoming module system for PM2.
 
 # pm2-ssh
 
@@ -12,7 +13,7 @@ Powered by [tty.js](https://github.com/chjj/tty.js/)
 
 ## Install
 
-```
+```bash
 $ pm2 install pm2-ssh
 $ google-chrome http://localhost:8080
 ```
@@ -34,6 +35,12 @@ $ pm2 set pm2-ssh:port 7890
 
 # Use https
 $ pm2 set pm2-ssh:https true
+```
+
+## Uninstall
+
+```bash
+$ pm2 uninstall pm2-ssh
 ```
 
 # License
