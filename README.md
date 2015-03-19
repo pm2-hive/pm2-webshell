@@ -3,11 +3,9 @@ This is a POC of the upcoming module system for PM2.
 
 # pm2-ssh
 
-Expose a web console from your server with this pm2 plugin.
+Expose a web console from your server with this pm2 plugin. HTTPS capable with username/password authentication. Powered by [tty.js](https://github.com/chjj/tty.js/)
 
-HTTPS capable with username/password authentication.
-
-Powered by [tty.js](https://github.com/chjj/tty.js/)
+Need PM2 +0.12.7.
 
 ![PM2 SSH](https://github.com/pm2-hive/pm2-ssh/raw/master/preview.png)
 
