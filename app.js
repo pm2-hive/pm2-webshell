@@ -48,7 +48,7 @@ var ssh_conf = {
 
 ssh_conf.users[conf.username || 'foo'] = conf.password || 'bar';
 
-if (conf.https == true) {
+if (conf.https && JSON.parse(conf.https) == true) {
   ssh_conf['https'] = {
     "key": "./term-default.key",
     "cert": "./term-default.crt"

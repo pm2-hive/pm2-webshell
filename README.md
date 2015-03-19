@@ -3,6 +3,8 @@
 
 *SSH* to your server with a browser.
 
+![PM2 SSH](https://github.com/pm2-hive/pm2-ssg/raw/master/preview.png)
+
 ## Install
 
 ```
