@@ -12,6 +12,8 @@ Need PM2 +0.12.7.
 ## Install
 
 ```bash
+$ npm install pm2 -g
+
 $ pm2 install pm2-ssh
 $ google-chrome http://localhost:8080
 ```
