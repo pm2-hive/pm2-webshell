@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "pmx": "*",
-    "pty.js": "git+ssh://git@github.com:Unitech/tty.js.git"
+    "pty.js": "git+ssh://git@github.com/Unitech/tty.js.git"
   },
   "apps": [
     {
