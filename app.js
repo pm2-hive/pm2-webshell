@@ -13,7 +13,7 @@ var conf = require('pmx').initModule({
 var ssh_conf = {
   shell : 'bash',
   users : {},
-  port  : conf.port,
+  port  : conf.port || 8080,
   "hostname": "127.0.0.1",
   "limitGlobal": 10000,
   "limitPerUser": 1000,
