@@ -1,4 +1,4 @@
-
+B
 
 var tty = require('tty.js');
 
@@ -14,7 +14,6 @@ var ssh_conf = {
   shell : 'bash',
   users : {},
   port  : conf.port || 8080,
-  "hostname": "127.0.0.1",
   "limitGlobal": 10000,
   "limitPerUser": 1000,
   "term": {
