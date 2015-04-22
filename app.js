@@ -1,19 +1,13 @@
-B
 
 var tty = require('tty.js');
 
-var conf = require('pmx').initModule({
-  errors           : false,
-  latency          : false,
-  versioning       : false,
-  show_module_meta : false,
-  comment          : 'Module to SSH to servers'
-});
+var conf = require('pmx').initModule();
 
 var ssh_conf = {
   shell : 'bash',
   users : {},
-  port  : conf.port || 8080,
+  port  : parseInt(conf.port),
+  "hostname": conf.bind,
   "limitGlobal": 10000,
   "limitPerUser": 1000,
   "term": {
@@ -45,9 +39,9 @@ var ssh_conf = {
   }
 };
 
-ssh_conf.users[conf.username || 'foo'] = conf.password || 'bar';
+ssh_conf.users[conf.username] = conf.password;
 
-if (conf.https && JSON.parse(conf.https) == true) {
+if (JSON.parse(conf.https) === true) {
   ssh_conf['https'] = {
     "key": "./term-default.key",
     "cert": "./term-default.crt"
