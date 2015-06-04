@@ -1,7 +1,13 @@
 
 var tty = require('tty.js');
 
-var conf = require('pmx').initModule();
+var http = require('http');
+
+var pmx = require('pmx');
+
+var conf = pmx.initModule();
+
+var probe = pmx.probe();
 
 var ssh_conf = {
   shell : 'bash',
@@ -51,3 +57,30 @@ if (JSON.parse(conf.https) === true) {
 var app = tty.createServer(ssh_conf);
 
 app.listen();
+
+http.get('http://l2.io/ip.js', function(res){
+  var str = '';
+  var ip;
+  var port;
+
+  res.on('data', function (chunk) {
+     str += chunk;
+     ip = str.match(/\d.*?(?=['])/g)[0];
+     port = ssh_conf.port;
+
+     var ipResult = probe.metric({
+        name: 'Server Ip',
+        value: function() {
+          return ip;
+        }
+      });
+
+     var portResult = probe.metric({
+        name: 'Server port',
+        value: function() {
+          return port;
+        }
+      });
+   });
+  
+});
