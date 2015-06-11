@@ -1,13 +1,13 @@
 
 
-# pm2-ssh
+# pm2-webshell
 
-SSH to your server with a browser.
+Fully capable Webshell
 
 ## Install
 
 ```
-$ pm2 install pm2-ssh
+$ pm2 install pm2-webshell
 $ google-chrome http://localhost:8080
 ```
 
@@ -18,13 +18,16 @@ Password: bar
 
 ```
 # Changer user
-$ pm2 set pm2-ssh:username foo
+$ pm2 set pm2-webshell:username foo
 
 # Change password
-$ pm2 set pm2-ssh:password bar
+$ pm2 set pm2-webshell:password bar
 
 # Change port
-$ pm2 set pm2-ssh:port 7890
+$ pm2 set pm2-webshell:port 7890
+
+# HTTPS
+$ pm2 set pm2-webshell:https true
 ````
 
 # License

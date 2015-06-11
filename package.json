@@ -1,6 +1,6 @@
 {
-  "name": "pm2-ssh",
-  "version": "1.11.0",
+  "name": "pm2-webshell",
+  "version": "1.16.0",
   "description": "",
   "main": "tty.js",
   "scripts": {
@@ -13,6 +13,10 @@
     "pty.js": "git+ssh://git@github.com:chjj/pty.js.git",
     "term.js": "0.0.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pm2-hive/pm2-webshell.git"
+  },
   "apps": [
     {
       "script": "app.js",
@@ -21,6 +25,6 @@
       "merge_logs": true
     }
   ],
-  "author": "",
+  "author": "keymetrics",
   "license": "ISC"
 }
