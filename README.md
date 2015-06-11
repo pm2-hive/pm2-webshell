@@ -2,16 +2,13 @@
 
 Fully capable Webshell
 
+![PM2 SSH](https://github.com/pm2-hive/pm2-webshell/raw/master/preview.png)
+
 ## Install
 
-```
+```bash
 $ pm2 install pm2-webshell
-=======
-Expose a web console from your server with this pm2 plugin. HTTPS capable with username/password authentication. Powered by [tty.js](https://github.com/chjj/tty.js/)
-
-Need PM2 +0.12.7.
-
-![PM2 SSH](https://github.com/pm2-hive/pm2-ssh/raw/master/preview.png)
+```
 
 ## Install
 

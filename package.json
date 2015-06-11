@@ -1,6 +1,6 @@
 {
   "name": "pm2-webshell",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "",
   "main": "tty.js",
   "scripts": {
