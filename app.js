@@ -1,5 +1,5 @@
 
-var tty = require('tty.js');
+var tty = require('modified-tty.js');
 
 var conf = require('pmx').initModule();
 

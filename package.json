@@ -1,6 +1,6 @@
 {
   "name": "pm2-webshell",
-  "version": "1.19.0",
+  "version": "1.20.0",
   "description": "",
   "main": "tty.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "pmx": "*",
-    "pty.js": "git+ssh://git@github.com/Unitech/tty.js.git"
+    "modified-tty.js": "*"
   },
   "config": {
     "port": "8080",
