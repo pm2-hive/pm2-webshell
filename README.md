@@ -25,16 +25,16 @@ Password: bar
 
 ```
 # Changer user
-$ pm2 set pm2-ssh:username foo
+$ pm2 conf pm2-ssh:username foo
 
 # Change password
-$ pm2 set pm2-ssh:password bar
+$ pm2 conf pm2-ssh:password bar
 
 # Change port
-$ pm2 set pm2-ssh:port 7890
+$ pm2 conf pm2-ssh:port 7890
 
 # Use https
-$ pm2 set pm2-ssh:https true
+$ pm2 conf pm2-ssh:https true
 ```
 
 ## Uninstall

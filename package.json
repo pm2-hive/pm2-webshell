@@ -1,6 +1,6 @@
 {
   "name": "pm2-ssh",
-  "version": "1.16.0",
+  "version": "1.18.0",
   "description": "",
   "main": "tty.js",
   "scripts": {
@@ -10,12 +10,12 @@
     "pmx": "*",
     "pty.js": "git+ssh://git@github.com/Unitech/tty.js.git"
   },
-  "config" : {
-    "port" : "8080",
-    "username" : "foo",
-    "password" : "bar",
-    "https" : "false",
-    "bind" : "0.0.0.0"
+  "config": {
+    "port": "8080",
+    "username": "foo",
+    "password": "bar",
+    "https": "false",
+    "bind": "0.0.0.0"
   },
   "apps": [
     {
