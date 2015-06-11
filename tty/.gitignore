@@ -1,9 +1,0 @@
-node_modules/
-*.swp
-build/*
-.lock-wscript
-out/
-Makefile.gyp
-*.Makefile
-*.target.gyp.mk
-*.node

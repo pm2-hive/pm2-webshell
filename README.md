@@ -1,13 +1,29 @@
 
+This is a POC of the upcoming module system for PM2.
 
 # pm2-webshell
 
+<<<<<<< HEAD
 Fully capable Webshell
 
 ## Install
 
 ```
 $ pm2 install pm2-webshell
+=======
+Expose a web console from your server with this pm2 plugin. HTTPS capable with username/password authentication. Powered by [tty.js](https://github.com/chjj/tty.js/)
+
+Need PM2 +0.12.7.
+
+![PM2 SSH](https://github.com/pm2-hive/pm2-ssh/raw/master/preview.png)
+
+## Install
+
+```bash
+$ npm install pm2 -g
+
+$ pm2 install pm2-ssh
+>>>>>>> 33efaedc2058fd922118fd03eddcaddde04f5539
 $ google-chrome http://localhost:8080
 ```
 
@@ -18,6 +34,7 @@ Password: bar
 
 ```
 # Changer user
+<<<<<<< HEAD
 $ pm2 set pm2-webshell:username foo
 
 # Change password
@@ -29,6 +46,25 @@ $ pm2 set pm2-webshell:port 7890
 # HTTPS
 $ pm2 set pm2-webshell:https true
 ````
+=======
+$ pm2 conf pm2-ssh:username foo
+
+# Change password
+$ pm2 conf pm2-ssh:password bar
+
+# Change port
+$ pm2 conf pm2-ssh:port 7890
+
+# Use https
+$ pm2 conf pm2-ssh:https true
+```
+
+## Uninstall
+
+```bash
+$ pm2 uninstall pm2-ssh
+```
+>>>>>>> 33efaedc2058fd922118fd03eddcaddde04f5539
 
 # License
 

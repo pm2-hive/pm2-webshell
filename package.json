@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "pm2-webshell",
   "version": "1.16.0",
+=======
+  "name": "pm2-ssh",
+  "version": "1.18.0",
+>>>>>>> 33efaedc2058fd922118fd03eddcaddde04f5539
   "description": "",
   "main": "tty.js",
   "scripts": {
@@ -8,10 +13,14 @@
   },
   "dependencies": {
     "pmx": "*",
-    "express": "3.4.4",
-    "socket.io": "0.9.16",
-    "pty.js": "git+ssh://git@github.com:chjj/pty.js.git",
-    "term.js": "0.0.3"
+    "pty.js": "git+ssh://git@github.com/Unitech/tty.js.git"
+  },
+  "config": {
+    "port": "8080",
+    "username": "foo",
+    "password": "bar",
+    "https": "false",
+    "bind": "0.0.0.0"
   },
   "repository": {
     "type": "git",
@@ -20,7 +29,6 @@
   "apps": [
     {
       "script": "app.js",
-      "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
       "max_memory_restart": "100M",
       "merge_logs": true
     }
