@@ -8,20 +8,12 @@ Fully capable Webshell
 
 ```bash
 $ pm2 install pm2-webshell
-```
-
-## Install
-
-```bash
-$ npm install pm2 -g
-
-$ pm2 install pm2-ssh
->>>>>>> 33efaedc2058fd922118fd03eddcaddde04f5539
 $ google-chrome http://localhost:8080
 ```
 
-Username: foo
-Password: bar
+Default Username: foo
+
+Default Password: bar
 
 ## Configure
 
