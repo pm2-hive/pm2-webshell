@@ -1,9 +1,5 @@
-
-This is a POC of the upcoming module system for PM2.
-
 # pm2-webshell
 
-<<<<<<< HEAD
 Fully capable Webshell
 
 ## Install
@@ -34,7 +30,6 @@ Password: bar
 
 ```
 # Changer user
-<<<<<<< HEAD
 $ pm2 set pm2-webshell:username foo
 
 # Change password
@@ -46,25 +41,12 @@ $ pm2 set pm2-webshell:port 7890
 # HTTPS
 $ pm2 set pm2-webshell:https true
 ````
-=======
-$ pm2 conf pm2-ssh:username foo
-
-# Change password
-$ pm2 conf pm2-ssh:password bar
-
-# Change port
-$ pm2 conf pm2-ssh:port 7890
-
-# Use https
-$ pm2 conf pm2-ssh:https true
-```
 
 ## Uninstall
 
 ```bash
-$ pm2 uninstall pm2-ssh
+$ pm2 uninstall pm2-webshell
 ```
->>>>>>> 33efaedc2058fd922118fd03eddcaddde04f5539
 
 # License
 

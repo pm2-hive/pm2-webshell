@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "pm2-webshell",
-  "version": "1.16.0",
-=======
-  "name": "pm2-ssh",
   "version": "1.18.0",
->>>>>>> 33efaedc2058fd922118fd03eddcaddde04f5539
   "description": "",
   "main": "tty.js",
   "scripts": {
