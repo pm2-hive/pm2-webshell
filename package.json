@@ -1,6 +1,6 @@
 {
   "name": "pm2-webshell",
-  "version": "1.20.0",
+  "version": "1.21.0",
   "description": "",
   "main": "tty.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "apps": [
     {
       "script": "app.js",
+      "name" : "pm2-webshell",
       "max_memory_restart": "100M",
       "merge_logs": true
     }

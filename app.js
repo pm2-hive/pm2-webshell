@@ -1,7 +1,67 @@
 
 var tty = require('modified-tty.js');
 
-var conf = require('pmx').initModule();
+var pmx = require('pmx');
+var probe = pmx.probe();
+
+var conf = pmx.initModule({
+  widget : {
+    type             : 'generic',
+    logo             : 'http://www.creativetechs.com/iq/tip_images/TerminalApp-Icon.png',
+
+    // 0 = main element
+    // 1 = secondary
+    // 2 = main border
+    // 3 = secondary border
+    theme            : ['#111111', '#1B2228', '#807C7C', '#807C7C'],
+
+    el : {
+      probes  : false,
+      actions : false
+    },
+
+    block : {
+      actions : false,
+      issues  : false,
+      meta    : false,
+      cpu: false,
+      mem: false,
+      main_probes : ['Username', 'Port', 'Bind', 'HTTPS']
+    }
+
+    // Status
+    // Green / Yellow / Red
+  }
+});
+
+
+probe.metric({
+  name: 'Port',
+  value: function() {
+    return conf.port;
+  }
+});
+
+probe.metric({
+  name: 'Username',
+  value: function() {
+    return conf.username;
+  }
+});
+
+probe.metric({
+  name: 'Bind',
+  value: function() {
+    return conf.bind;
+  }
+});
+
+probe.metric({
+  name: 'HTTPS',
+  value: function() {
+    return conf.https;
+  }
+});
 
 var ssh_conf = {
   shell : 'bash',
