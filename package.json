@@ -1,5 +1,5 @@
 {
-  "name": "pm2-webshell-jnk",
+  "name": "pm2-webshell",
   "version": "1.21.0",
   "description": "Working version of pm2-webshell",
   "main": "app.js",
@@ -19,16 +19,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/JNK/pm2-webshell-jnk.git"
+    "url": "git://github.com/pm2-hive/pm2-webshell.git"
   },
   "apps": [
     {
       "script": "app.js",
-      "name" : "pm2-webshell-jnk",
+      "name" : "pm2-webshell",
       "max_memory_restart": "100M",
       "merge_logs": true
     }
   ],
-  "author": ["keymetrics", "JNK"],
+  "author": "keymetrics",
   "license": "ISC"
 }
