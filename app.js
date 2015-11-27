@@ -1,5 +1,5 @@
 
-var tty = require('modified-tty.js');
+var tty = require('tty.js');
 
 var pmx = require('pmx');
 var probe = pmx.probe();

@@ -1,14 +1,14 @@
 {
-  "name": "pm2-webshell",
+  "name": "pm2-webshell-jnk",
   "version": "1.21.0",
-  "description": "",
-  "main": "tty.js",
+  "description": "Working version of pm2-webshell",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "pmx": "*",
-    "modified-tty.js": "*"
+    "pmx": "^0.5.5",
+    "tty.js": "^0.2.15"
   },
   "config": {
     "port": "8080",
@@ -19,16 +19,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pm2-hive/pm2-webshell.git"
+    "url": "git://github.com/JNK/pm2-webshell-jnk.git"
   },
   "apps": [
     {
       "script": "app.js",
-      "name" : "pm2-webshell",
+      "name" : "pm2-webshell-jnk",
       "max_memory_restart": "100M",
       "merge_logs": true
     }
   ],
-  "author": "keymetrics",
+  "author": ["keymetrics", "JNK"],
   "license": "ISC"
 }
