@@ -1,7 +1,7 @@
 {
   "name": "pm2-webshell",
-  "version": "1.21.0",
-  "description": "Working version of pm2-webshell",
+  "version": "1.23.0",
+  "description": "Expose a fully capable terminal in your browser ",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,13 @@
     "https": "false",
     "bind": "0.0.0.0"
   },
+  "keywords": [
+    "webshell",
+    "terminal",
+    "ssh",
+    "webssh",
+    "pm2"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/pm2-hive/pm2-webshell.git"
@@ -29,6 +36,6 @@
       "merge_logs": true
     }
   ],
-  "author": "keymetrics",
+  "author": ["keymetrics", "JNK"],
   "license": "ISC"
 }
