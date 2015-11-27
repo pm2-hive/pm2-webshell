@@ -1,14 +1,14 @@
 {
   "name": "pm2-webshell",
   "version": "1.21.0",
-  "description": "",
-  "main": "tty.js",
+  "description": "Working version of pm2-webshell",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "pmx": "*",
-    "modified-tty.js": "*"
+    "pmx": "^0.5.5",
+    "tty.js": "^0.2.15"
   },
   "config": {
     "port": "8080",
