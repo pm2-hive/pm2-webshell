@@ -103,8 +103,8 @@ ssh_conf.users[conf.username] = conf.password;
 
 if (JSON.parse(conf.https) === true) {
   ssh_conf['https'] = {
-    "key": "./term-default.key",
-    "cert": "./term-default.crt"
+    "key": conf.ssl_key || "./term-default.key",
+    "cert": conf.ssl_cert || "./term-default.crt"
   };
 }
 
