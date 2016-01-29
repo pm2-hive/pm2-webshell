@@ -6,7 +6,6 @@ Fully capable Webshell
 
 ![PM2 SSH](https://github.com/pm2-hive/pm2-webshell/raw/master/preview.png)
 
-
 ## Install
 
 ```bash
