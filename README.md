@@ -1,10 +1,11 @@
 # pm2-webshell
 
+[![GetBadges Game](https://pm2-hive-pm2-webshell.getbadges.io/shield/company/pm2-hive-pm2-webshell)](https://pm2-hive-pm2-webshell.getbadges.io/?ref=shield-game)
+
 Fully capable Webshell
 
 ![PM2 SSH](https://github.com/pm2-hive/pm2-webshell/raw/master/preview.png)
 
-[![GetBadges Game](https://pm2-hive-pm2-webshell.getbadges.io/shield/company/pm2-hive-pm2-webshell)](https://pm2-hive-pm2-webshell.getbadges.io/?ref=shield-game)
 
 ## Install
 
