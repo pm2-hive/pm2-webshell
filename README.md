@@ -31,6 +31,12 @@ $ pm2 set pm2-webshell:port 7890
 
 # HTTPS
 $ pm2 set pm2-webshell:https true
+
+# SSL Certificate file
+$ pm2 set pm2-webshell: ssl_cert ~/path/to/ssl.cert
+
+# SSL Key file 
+$ pm2 set pm2-webshell: ssl_key ~/path/to/ssl.key
 ````
 
 ## Uninstall
