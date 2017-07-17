@@ -1,6 +1,6 @@
 {
   "name": "pm2-webshell",
-  "version": "1.24.0",
+  "version": "1.24.1",
   "description": "Expose a fully capable terminal in your browser ",
   "main": "app.js",
   "scripts": {
@@ -35,7 +35,8 @@
       "script": "app.js",
       "name" : "pm2-webshell",
       "max_memory_restart": "100M",
-      "merge_logs": true
+      "merge_logs": true,
+      "interpreter" : "node@4.8.4"
     }
   ],
   "author": ["keymetrics", "JNK"],
